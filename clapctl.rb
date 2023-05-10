@@ -5,11 +5,11 @@
 class Clapctl < Formula
   desc ""
   homepage "https://github.com/stdbio/autopilot"
-  version "1.15"
+  version "1.16"
 
   on_macos do
-    url "https://github.com/yujinqiu/autopilot/releases/download/1.15/autopilot_1.15_darwin_all.tar.gz"
-    sha256 "089cb66bec0c3d6dbd012ea061e47d7a55ccbf9d9aa86309d9e430ea5403140a"
+    url "https://github.com/yujinqiu/autopilot/releases/download/1.16/autopilot_1.16_darwin_all.tar.gz"
+    sha256 "2a50cf6af173645614d70bde579e02ede9999cf80d3052d0720824897e8f7ef6"
 
     def install
       bin.install "clapctl"
@@ -18,16 +18,16 @@ class Clapctl < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yujinqiu/autopilot/releases/download/1.15/autopilot_1.15_linux_arm64.tar.gz"
-      sha256 "a826b76d705a22c25271571d172e5b517b6b3d46a3e45fb5fcc3a099b2622c4e"
+      url "https://github.com/yujinqiu/autopilot/releases/download/1.16/autopilot_1.16_linux_arm64.tar.gz"
+      sha256 "6429cc0397f354b4659bf87cf32981c32862bfedad0d9db874cb4753e81482ed"
 
       def install
         bin.install "clapctl"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/yujinqiu/autopilot/releases/download/1.15/autopilot_1.15_linux_amd64.tar.gz"
-      sha256 "cf420b8ffc3d170ebc8142d99412114d3a61af41240ea021e8f1703273f66aa9"
+      url "https://github.com/yujinqiu/autopilot/releases/download/1.16/autopilot_1.16_linux_amd64.tar.gz"
+      sha256 "ee6250fb2fbe2f4c39aeff44fae121f3963b02834fa9e496eff389c24e605ff6"
 
       def install
         bin.install "clapctl"
