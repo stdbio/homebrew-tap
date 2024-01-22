@@ -5,11 +5,11 @@
 class Clapctl < Formula
   desc ""
   homepage "https://github.com/stdbio/autopilot"
-  version "0.1.8"
+  version "0.2.0"
 
   on_macos do
-    url "https://github.com/stdbio/pkgs/releases/download/0.1.8/pkgs_0.1.8_darwin_all.tar.gz"
-    sha256 "67a66dbdd0647f40fe48fcc8d3460f027a2fda0822ad5a9f9b44df102cd7a79a"
+    url "https://github.com/stdbio/pkgs/releases/download/0.2.0/pkgs_0.2.0_darwin_all.tar.gz"
+    sha256 "ecec9ec1d3c5159c2a6cdc2ae465026e249e6ee053d3e76aec590b8f14815be7"
 
     def install
       bin.install "clapctl"
@@ -18,16 +18,16 @@ class Clapctl < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/stdbio/pkgs/releases/download/0.1.8/pkgs_0.1.8_linux_arm64.tar.gz"
-      sha256 "9d1f2a664d80a4d3b6de204fbc5aac33763b5965cc47e8019274550589ad3b66"
+      url "https://github.com/stdbio/pkgs/releases/download/0.2.0/pkgs_0.2.0_linux_arm64.tar.gz"
+      sha256 "a6e4db69b1e6c52aae742914427c9f83cbded64c5a69fd073c7894a720462fcf"
 
       def install
         bin.install "clapctl"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/stdbio/pkgs/releases/download/0.1.8/pkgs_0.1.8_linux_amd64.tar.gz"
-      sha256 "0ace87eabe874ce96a8081735b232f76e1432df4aba1b594049b4b5b2942296a"
+      url "https://github.com/stdbio/pkgs/releases/download/0.2.0/pkgs_0.2.0_linux_amd64.tar.gz"
+      sha256 "e553425c7f0bf153c8dfc2339323603961c50f41569a3ce12536b2496a5ba70d"
 
       def install
         bin.install "clapctl"
