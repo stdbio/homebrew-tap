@@ -3,7 +3,7 @@
 ## Install clapctl
 
 ```
-brew tap stdbio/homebrew-tap git@github.com:stdbio/homebrew-tap.git
+brew tap stdbio/homebrew-tap https://github.com/stdbio/homebrew-tap.git
 brew install clapctl
 ```
 
