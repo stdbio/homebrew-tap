@@ -14,6 +14,11 @@ brew update  // run this if you want to force update to latest.
 brew upgrade clapctl
 ```
 
+## Uninstall clapctl
+
+```
+brew uninstall clapctl
+```
 
 ## Uninstall homebrew tap
 
