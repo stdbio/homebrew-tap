@@ -1,4 +1,4 @@
-# stdb homebrew-tap
+# ClapDB homebrew-tap
 
 ## Install clapctl
 
